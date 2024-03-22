@@ -1,0 +1,831 @@
+.search-box {
+  width: 350px;
+  position: relative;
+  display: flex;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+.search-input {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 15px 45px 15px 15px;
+  background-color: #eaeaeb;
+  color: #6c6c6c;
+  border-radius: 6px;
+  border:none;
+  transition: all .4s;
+}
+
+.search-input:focus {
+  border:none;
+  outline:none;
+  box-shadow: 0 1px 12px #c50b14;
+  -moz-box-shadow: 0 1px 12px #f00d0d;
+  -webkit-box-shadow: 0 1px 50px #ff0909;
+}
+
+.search-btn {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 6px 9px;
+  margin-left:-45px;
+  border:none;
+  color: #6c6c6c;
+  transition: all .4s;
+  z-index: 10;
+}
+
+.search-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+}
+
+.search-btn:focus {
+  outline:none;
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+/* FAQ Section Styles */
+.faq-section {
+  padding: 4rem 9%;
+  background-color: #f9f9f9;
+}
+
+.faq-section .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+}
+
+.faq-question {
+  margin-bottom: 1rem;
+  text-align: center;
+
+  font-size: 1.8rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.faq-answer {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #666;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+.input-fields {
+  font-size: 20px;
+}
+
+
+
+.showtimes {
+  padding: 5rem 9%;
+  text-align: center;
+}
+
+.showtimes .heading {
+  margin-bottom: 2.5rem;
+  font-size: 100px;
+  color: #02db88;
+}
+
+.showtimes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+  /* table edit ex: shade */
+
+.movie {
+  background: #040404;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px rgb(240, 9, 9);
+}
+
+.movie h2 {
+  color: #e9e2e2;
+  margin-bottom: 15px;
+  font-size:100px;
+}
+
+.movie ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.movie ul li {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #f3e2e2;
+}
+
+@media (max-width: 768px) {
+  .showtimes-container {
+      flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
+
+
+p2 {
+  font-size: 20px;
+  color: #b26d6d;
+}
+
+em{
+  color:rgb(18, 17, 17);
+  }
+
+
+* {
+  /* whole project text edt */
+
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+
+  .header {
+    background: rgba(207, 195, 195, 0.95); 
+    border-bottom: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+.header .logo {
+    font-size: 24px; 
+    color: #160303; 
+    padding-right: 80px; 
+}
+
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  20px;
+}
+
+.navbar a {
+    color: #333; 
+    margin: 0 10px;
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+
+
+
+
+
+
+/* Special Events Section CSS */
+.special-events {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-title {
+  margin-bottom: 30px; 
+  font-size: 100px; 
+  text-align: center;
+  color: #4e0fc4; 
+  text-shadow: 10px 2px 4px rgba(241, 4, 4, 0.5); 
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event {
+  width: calc(25% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event h3 {
+  margin-top: 0;
+  font-size: 80px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use a modern, sans-serif font for a clean look */
+  color: #333; /* Set a neutral, sophisticated font color */
+  text-shadow: 10px 2px 4px rgba(196, 10, 10, 0.968); /* Add a subtle shadow for depth */
+  letter-spacing: -1px; /* Adjust letter-spacing for a tight, custom appearance */
+  line-height: 1.2; /* Improve readability by adjusting line height */
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.event p {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.event:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .event {
+    width: 100%;
+  }
+}
+
+
+
+
+
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+section {
+  padding: 5rem 9%;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid black;
+  color: rgb(210, 8, 8);
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+}
+.btn:hover {
+  background: black;
+  color: white;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.header.active {
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  text-align: right;
+  font-size: 50px;
+  color: rgb(254, 15, 15);
+  font-weight: bolder;
+}
+.wrapper1 {
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.wrapper1 .title1 h1 {
+  color: rgb(15, 0, 128);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 3.5rem;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.uil {
+  height: 50px;
+  width: 50px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 60%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #5f66618f;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 189px;
+}
+.msg .btn1 {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid green;
+  color: black;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  background: none;
+}
+.btn1 button[type="submit"] {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+i {
+  color: rgb(34, 164, 34);
+}
+
+.header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: black;
+}
+.header .navbar a:hover {
+  color: green;
+}
+.header .navbar #nav-close {
+  font-size: 5rem;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: black;
+}
+
+.header.icons a:hover,
+.header.icons div:hover {
+  color: green;
+}
+.header #menu-btn {
+  display: none;
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transform: translateY(-110%);
+}
+
+
+
+
+
+form {
+  width: 90vw;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid white;
+  display: flex;
+  align-items: center;
+}
+form input {
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+form label {
+  cursor: pointer;
+  color: white;
+}
+form label {
+  color: rgb(1, 19, 1);
+  font-size: 20px;
+  text-align: center;
+}
+.home {
+  padding: 0;
+}
+/* This is movie weel area text edt */
+
+.home .box {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: flex-end;
+  padding: 2rem 9%;
+}
+
+.home .content {
+  width: 50rem;
+}
+
+/* This is  text = We’re Doing Our Part To Help Keep You Safe. */
+
+.home .content span {
+  font-size: 4rem;
+  color: rgb(253, 254, 255);
+}
+.home .content h5 {
+  font-size: 40px;
+  color: rgb(1, 10, 1);
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+.home .content p {
+  line-height: 2;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.Movie listing .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(29rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* Now Showing! area description area*/
+
+.Movielisting .box-container .box {
+  text-align: center;
+  padding: 1rem;
+}
+.Movielisting .box-container .box img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 1px 2px 6px 3px grey;
+}
+.Movielisting .box-container .box h3 {
+  font-size: 50px;
+  background: linear-gradient(to right, #2545fc, #0de3eb, #100a2e, #eedd44);
+  color: transparent; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  -webkit-background-clip: text; 
+}
+
+
+.Movielisting .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+
+.packages .box-container .box .content {
+  display: flex;
+  flex-direction: column; /* Keeps content stacked but buttons inline */
+  align-items: center; /* Center align the content for better appearance */
+}
+
+
+
+.packages {
+  background: #eee;
+}
+
+.packages .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.packages .box-container .box {
+  text-align: center;
+  background: #fff;
+  border: 0.2rem solid #10221b;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.packages .box-container .box:hover {
+  background: #10221b;
+}
+
+.packages .box-container .box:hover .content > * {
+  color: #fff;
+}
+
+.packages .box-container .box:hover .btn {
+  margin: 0.5rem 0; /* Adjusts spacing around buttons */
+
+  border-color: #fff;
+}
+
+.packages .box-container .box:hover .btn:hover {
+  background: #fff;
+  color: #10221b;
+}
+
+.packages .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: 0.5rem;
+}
+/* Coming Soon area pic edt */
+
+.packages .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* Coming Soon area space area */
+
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+/* Coming Soon area headline text color edt */
+
+.packages .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #016e44;
+}
+
+.packages .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.packages .box-container .box .content .price {
+  font-size: 4rem;
+  color: #219150;
+}
+
+
+
+/* Quick Links
+Home
+Packages
+Extra Links
+Ask Questions
+Cominig Soon
+Privacy Policy
+Contact Info
++94776824351
+Miningsuppa@Gmail.Com
+Sri Lanka
+Follow Us
+Facebook
+Instagram area edt
+ */
+
+.footer {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/footer.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+
+/* quick link, extra links, contact info, follow us area edt  */
+
+.footer .box-container .box h3 {
+  font-size: 30px;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+
+/* quick link, extra links, contact info, follow us area down txt edt  */
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 30px;
+  color: #fff8f8;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  color: #00a244;
+  padding-right: 0.5rem;
+}
+/* quick link, extra links, contact info, follow us area txt hover ()  */
+
+.footer .box-container .box a:hover {
+  color: #219150;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+/* Created By area name  Supun Rathnayaka is green color | ICBT Assigment!  */
+
+.footer .credit span {
+  color: #ff0000;
+}
+
+
+
+
+
+/* This is camera roll area */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home .box .conent {
+    text-align: center;
+  }
+  .home .box .conent span {
+    font-size: 3rem;
+  }
+  .home .box .conent h3 {
+    font-size: 4rem;
+  }
+}
+
+
+
+/* Raw in Home,
+Movie Listing,
+Show Times,
+Information About The Theater,
+Special Events,
+Promotion,
+Contact,
+Booking
+ */
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+
+  
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    background: rgb(164, 8, 8);
+    z-index: 10000;
+    width: 35rem;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    font-size: 50px; /* Adjusted for consistency */
+    color: #f0f6f4; /* Text color adjusted to match style.css */
+    text-align: justify;
+    text-align: center;
+
+    background: url('../images/ee114865cf1ac2282ca7be75f1df4339.jpg') no-repeat center center fixed; 
+    background-size: cover;
+
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #150af7; /* Ensuring heading color consistency */
+}
+
+.btn {
+    display: inline-block;
+    border: 0.2rem solid #10221b; /* Button border color */
+    color: #e7edeb; /* Button text color */
+    background: none;
+    padding: 1rem 3rem;
+    font-size: 55px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e61010;
+    color: #ffffff; /* On hover, text color changes */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+
+/* Responsive adjustments for images and containers */
+@media (max-width: 768px) {
+    .container img {
+       width: 100%; /* Full width on smaller screens */
+       height: auto; /* Adjust height automatically */
+    }
+}
+
+
+.banner-area {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient( #1c1a2521, #000000ab),url(../images/th.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; 
+}
+
+/* Specific styles from style.css can be directly copied or adapted as needed here */
+
+
+/* Existing styles */
+
+/* Additions for About Us */
+.about-us h2, .about-us h3 {
+  color: #eaf1ef; 
+  margin-bottom: 1rem;
+}
+
+.about-us p, .about-us li {
+  font-size: 40px; /* Readable text size */
+  color: #ededf7; /* Subtle text color for readability */
+  margin-bottom: 1rem;
+}
+
+.about-us ul {
+  list-style-type: disc; /* Adds a bit of style to lists */
+  padding-left: 2rem; /* Proper indentation for list */
+}
+
+/* Ensure your responsive adjustments are applied here as well */
+@media (max-width: 768px) {
+  .about-us h2, .about-us h3 {
+      font-size: 2.5rem; /* Adjust headings for smaller screens */
+  }
+
+  .about-us p, .about-us li {
+      font-size: 1.4rem; /* Adjust text size for readability on smaller devices */
+  }
+}
